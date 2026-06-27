@@ -1,4 +1,16 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    alias(libs.plugins.android.application) apply false
+    id("com.android.application")
+}
+
+android {
+    namespace = "com.example.simpleapilistapp"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.simpleapilistapp"
+        minSdk = 23
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
 }
